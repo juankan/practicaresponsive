@@ -1,0 +1,330 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+a {
+	color:#DD4F24;
+	text-decoration:none;
+}
+body {
+	
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+}
+header { 
+	
+	padding:0.3em;
+	background-color:#444;
+	color:#e8e8e8;
+	overflow:hidden;
+	border-radius:5px;
+	margin:9px;
+	box-shadow:0px 5px 2px rgba(0,0,0,0.3) ;
+
+}
+header .logo {
+	/*inline-block permite alinear el class logo y class avatar*/
+	display: inline-block;
+	float:left;
+	padding-right:0.3em;
+	border-right:1px solid #22BCE0;
+}
+header .logo img {
+	width:50px;
+
+}
+header  .avatar {
+	/*Las dos class tienen inline-block*/
+	display:inline-block;
+	position:absolute;
+	top:0.09em;
+	right:30px;
+	/*Sirve para sobreponer capas en este caso class avatar y class flechita*/
+	z-index:69;
+	margin:14px;
+
+}
+
+header .avatar figure{
+	margin:0;
+
+}
+header .avatar figure img {
+	width:60px;
+	/*El border radius al 50% permite redondear la imagen*/
+	border-radius:50%;
+	margin:-6px;
+
+
+}
+
+header .titular {
+	margin-right:80px;
+
+
+
+}
+header .avatar .flechita {
+	
+	background:#DD4F24;
+	text-align:right;
+	color:white;
+	display:block;
+	padding:0.2em 0.2em 0.2em 1em; 
+	right:-10px;
+	position:absolute;
+	text-decoration:none;
+	top:25%;
+	/*para sobreponer imagenes en numero positivo va arriba y el negativo abajo*/
+	z-index:-5;
+	margin-right:-11px;
+	border-radius:5px 5px 5px 5px;
+
+}
+header .avatar .flechita:after {
+	font-family:icomoon;
+	content: "\e602";
+	font-size:1.2em;
+	vertical-align:bottom;
+}
+header .titular .titulo {
+	margin:0px;
+	font-size:1.3em;
+	margin: 0 0 0 60px;
+	
+	top:0;
+}
+header .titular .publicar {
+	
+	margin-left:60px;
+	border-radius:5px;
+
+}
+header .titular .publicar p {
+	margin:0.5em 0 0 0 ;
+
+	display:inline-block;
+	color:#22BCE0;
+	font-weight:bold;
+}
+header .titular .publicar a {
+	background-color: #DD4F24;
+	color:white;
+	float:right;
+	font-style:italic;
+	padding:0.2em 0.3em;
+	text-decoration:none;
+	border-radius:5px;
+}
+header .titular .publicar a:before {
+	font-family:icomoon;
+	content: "\e600";
+	margin-right:0.5em;
+	vertical-align:bottom;
+	font-size:1.1em;
+}
+.menu {
+	position:relative;
+	border-left:5px solid white;
+
+	
+}
+.menu ul { 
+	margin:0px;
+	padding:0;
+	background-color:#839afe;
+	height:40px;
+	white-space:nowrap;
+	overflow-x:auto;
+
+}
+.menu ul li {
+	display:inline-block;
+	margin-top:0.4em;
+	
+
+}
+.menu ul li a {
+	text-decoration:none;
+	color:white;
+	display:block;
+	padding:0.3em 0.5em;
+
+}
+.menu ul li a:hover {
+	background-color: rgba(0,0,0, 0.3);
+	border-radius:4px;
+
+
+}
+.menu:before {
+	content:"";
+	position:absolute;
+	border-top:20px solid transparent;
+	border-left:8px solid white;
+	/*border-right:20px solid yellow;*/
+	border-bottom:20px solid transparent;
+
+}
+body #hora {
+	text-align:right;
+	font-weight:bold;
+	border:2px solid black;
+	display:inline-block;
+	margin:5px;
+	background-color:#444;
+	color:white;
+	padding:2px;
+
+}
+.posts {
+	
+	padding:0.5em;
+	background-color:#e8e8e8;
+}.posts .post {
+	
+	background-color:white;
+	border-radius:5px;
+	box-shadow:0 0 10px black;
+}
+.posts .post .imagen {
+	
+	display:inline-block;
+	float:left;
+}
+.posts .post .imagen figure  {
+	margin:0;
+	height:160px;
+}
+.posts .post .imagen figure img {
+	width:120px;
+	height:160px;
+
+}
+.posts .post .informacion .titulo {
+	margin:0.3em 0 0.3em 130px;
+	font-size:1em;
+	font-style:italic;
+	padding:0.3em 0;
+}
+.posts .post .informacion {
+	height:160px;
+
+}
+.posts .post .informacion .autor {
+	margin:0.3em 0 0.3em 130px;
+}
+.posts .post .informacion .tag {
+	margin:0.3em 0 0 10px;
+	background-color:#22BCE0;
+	color:white;
+	padding:0.3em 0.5em;
+	display:inline-block;
+	border-radius:6px;
+}
+.posts .post .informacion .fecha {
+	
+	text-align:right;
+	padding-right:0.5em;
+	display:inline-block;
+	float:right;
+
+}
+.posts .post .acciones {
+	border-top:3px solid #22BCE0;
+	padding:0.3em;
+}
+
+.posts .post .acciones .votacion {
+	
+	margin-left:1.5em;
+	padding:0.3em;
+}
+.posts .post .acciones .comentarios {
+	
+	float:right;
+	text-decoration:none;
+}
+
+.posts .post .acciones .votacion,.posts .post .acciones .comentarios {
+	display:inline-block;
+}
+
+.posts .post .acciones .votacion .up{
+	color:green;
+}
+.posts .post .acciones .votacion .up:after{
+	font-family:icomoon;
+	content: "\e603";
+}
+
+.posts .post .acciones .votacion .down {
+	color:red;
+}
+.posts .post .acciones .votacion .down:after {
+	font-family:icomoon;
+	content: "\e602";
+}
+
+.posts .post .acciones .votacion .span {
+	color:#a7a7a7;
+}
+.posts .post .acciones .comentarios a{
+	
+
+}
+.posts .post .acciones .comentarios span {
+	
+	display:inline-block;
+	margin-right:1em;
+	color:#e8e8e8;
+	background-color:#444;
+	padding:0.1em 0.3em;
+	border-radius:4px;
+
+}
+.posts .post .acciones .comentarios  a:after {
+	font-family:icomoon;
+	content: "\e601";
+	font-size:1.3em;
+	color:#f2a902;
+}
+footer {
+	background-color:#DD4F24;
+	text-align:center;
+}
+footer h3 {
+	margin:0;
+	padding:;
+	color:rgba(255,255,255,0.7);
+}
+footer h3 strong {
+	font-size: 0.7em;
+	display:block;
+	
+
+}
+footer h3 span {
+	font-size:1em;
+
+}
+footer h3 span:before {
+	content:"-";
+}
+footer h3 span:after {
+	content:"-";
+}
+	
+
+
+
+
