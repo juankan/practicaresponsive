@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px){
+	.posts .post {
+		display:inline-block;
+		width:48%;
+		margin-bottom:1em;
+	}
+	.posts .post:nth-child(odd){
+		margin-right:1em;
+	}
+	header .titular .publicar a {
+	position:relative;
+	padding-left:3em;
+	}
+	header .titular .publicar a:before{
+		position:absolute;
+		font-size:2.5em;
+		left:0;
+		top:-10px;
+	}
+	
+}
